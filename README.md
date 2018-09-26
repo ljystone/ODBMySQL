@@ -1,0 +1,2 @@
+# ODBMySQL
+C++ ORM映射
