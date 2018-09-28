@@ -5,23 +5,23 @@ class Patient
 {
 public:
 	Patient();
-	unsigned short getId() const; //id 
+	unsigned short getId() const;        //id 
 	void setId(unsigned short);
 	const std::string& get_name() const; //name
 	std::string& set_name();
-	char getSex() const;
+	char getSex() const;                 //sex
 	void setSex(char);
-	unsigned short getAge() const;
+	unsigned short getAge() const;       //age
 	void setAge(unsigned short);
-	unsigned short getHeight() const;
+	unsigned short getHeight() const;    //height
 	void setHeight(unsigned short);
-	unsigned short getWeight() const;
+	unsigned short getWeight() const;    //weight
 	void setWeight(unsigned short);
-	std::string getPatientHistory() const;
+	std::string getPatientHistory() const;//patienthistory
 	void setPatientHistory(std::string);
-	unsigned short getNeckLength_() const;
+	unsigned short getNeckLength_() const;//nexklength
 	void setNeckLength_(unsigned short);
-	unsigned short getNeckWaistLength() const;
+	unsigned short getNeckWaistLength() const;//waistlength
 	void setNeckWaistLength(unsigned short);
 private:
 	unsigned short id_;
@@ -36,4 +36,4 @@ private:
 };
 
 #pragma db object(Patient)
-#pragma db member(Patient::email_) id
+#pragma db member(Patient::id_) id
